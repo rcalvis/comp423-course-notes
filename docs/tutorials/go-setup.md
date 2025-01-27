@@ -74,31 +74,63 @@ Inside of the .devcontainer directory, create a JSON file titled "devcontatiner.
 
 Save the file and commit to your git repo by following the same steps as before. Now, you will need to reopen your project in the dev container. To do so, open the command palette in VSCode with the following keyboard shortcut: CMD + Shift + P. Search for and click on "Dev Containers: Reopen in Container." 
 
-## Using Code Blocks in Mkdocs
+To ensure you have correctly set up your dev container, run the following command in your terminal:
 
-Code blocks are useful for including lines of code in your site. For example, the following code blocks shows a simple Python function.
-
-``` py
-def sum(x,y):
-    return x + y
+``` bash
+go version
 ```
 
-To use code blocks, use three backticks (`) as the starting and ending markers for your code. Specify the language in the first line. An example is provided below which would produce the code block identified above.
+Once you see a version of Go installed, you have now successfully created and opened a new dev container for Go!
 
-``` md title="Code Block"
- ``` py
- def sum(x, y):
-     return x + y
- ```
+## Step 2: Begin Your Go Project
+
+### 1. Create Your Go Project
+
+In your existing directory, create a new directory to hold the files for the Go Project. You can use the following commands in the terminal to create a subdirectory and mod file:
+
+``` bash
+mkdir go-project
+go mod init go-project
 ```
 
-To include titles for your code blocks, include 'title="<name>"' in the same line that the language was specified in.
+By using the go mod command, you are creating a new module file. This will be "go.mod," which shows the dependencies of the program. This is standard practice when using Go, even if the project does not require any dependencies. Having an empty go.mod file makes it clear that the project does not use any dependencies.
 
-``` md title="Code Block with Title"
- ``` py title="sum.py"
-  def sum(x, y):
-     return x + y
- ```
+### 2. Create Your .go File
+
+To begin coding in Go, create a file in your directory titled "main.go". In this file you will need to include the following:
+
+``` go
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello COMP423")
+}
 ```
 
-## Using Admonitions in Mkdocs
+Once you have saved the file, you can run it with the following command in the terminal:
+
+``` bash
+go run main.go
+```
+
+You should see the output "Hello COMP423" in your terminal.
+
+### 3. Compile your directory using go build
+
+To compile your directory, use the following command in your terminal:
+
+``` bash
+go build
+```
+
+You will then be able to run your code using the following command in your terminal:
+
+``` bash
+./go-tutorial
+```
+
+This allows you to run the output without re-compiling. This helps with processing times and memory.
+
+Congratulations! You have successfully created a dev container and created your first Go project!

@@ -3,6 +3,11 @@ theme:
   name: material
   features:
     - content.code.copy
+  palette:
+    primary: teal
+    accent: cyan
+    theme: default
+
 
 markdown_extensions:
   - pymdownx.highlight:

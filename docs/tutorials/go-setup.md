@@ -33,8 +33,6 @@ git init
 
 You have now successfully created a new directory and git repository. You can now begin adding commits!
 
-[//]: # (Can discuss repo set-up in GitHub as well because they need to be linked in order to commit)
-
 ### 2. Create your first commit
 
 Every project should include a README.md file. Create a new file in your directory titled "README.md" with the following contents:
@@ -74,7 +72,9 @@ Inside of the .devcontainer directory, create a JSON file titled "devcontatiner.
 }
 ```
 
-[//]: # (Could explain what the above code does more in detail)
+* `name`: Initializes a name for your dev container.
+* `image`: Adds the image for Go from Microsoft.
+* `extensions`: Installs Go for VSCode.
 
 Save the file and commit to your git repo by following the same steps as before. Now, you will need to reopen your project in the dev container. To do so, open the command palette in VSCode with the following keyboard shortcut: CMD + Shift + P. Search for and click on "Dev Containers: Reopen in Container." 
 
@@ -113,7 +113,7 @@ func main() {
 }
 ```
 
-[//]: # (Can describe what package main does here and explain the code more)
+The headers are important for this file. Including `package main` indicates that this is an entrypoint to our program. Including `fmt` allows for printing to the standard output.
 
 Once you have saved the file, you can run it with the following command in the terminal:
 
@@ -137,8 +137,6 @@ You will then be able to run your code using the following command in your termi
 ./go-tutorial
 ```
 
-This allows you to run the output without re-compiling. This helps with processing times and memory.
-
-[//]: # (Could remind about making sure they commit all their changes)
+This allows you to run the output without re-compiling. This helps with processing times and memory. Make sure to commit any changes made.
 
 Congratulations! You have successfully created a dev container and created your first Go project!

@@ -2,4 +2,4 @@
 
 * Primary author: [Rachel Alvis](https://github.com/rcalvis)
 
-* Reviewer: [<Partner name>](https://github.com/mvolety)
+* Reviewer: [Mya Volety](https://github.com/mvolety)

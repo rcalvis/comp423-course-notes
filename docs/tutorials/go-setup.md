@@ -4,7 +4,7 @@
 
 * Reviewer: [Mya Volety](https://github.com/mvolety)
 
-Welcome! In this tutorial you will learn how to set up a dev container in Go. You will also learn how to start your own website using Material for Mkdocs. Material for Mkdocs is a very useful way to easily make websites without the heavy lifting of HTML and CSS.
+Welcome! In this tutorial you will learn how to set up a dev container in Go. Using a dev container is important to ensure that your project will be runnable on any system.
 
 ## Prerequisites
 
@@ -13,6 +13,7 @@ You should have VSCode, Docker, and git installed on your system. Instructions a
 * [Download VSCode](https://code.visualstudio.com/download)
 * [Download Docker](https://docs.docker.com/get-started/get-docker/)
 * [Download git](https://git-scm.com/downloads)
+* Make sure you have the "Dev Containers" extension for VSCode installed.
 
 ## Step 1: Dev Container Setup
 
@@ -21,9 +22,10 @@ You should have VSCode, Docker, and git installed on your system. Instructions a
 To begin, open VSCode and open a new terminal. Create a new directory by running the following command in the terminal:
 
 ``` bash
-mkdir <directory name>
-cd <directory name>
+mkdir go-helloworld
 ```
+
+Open your new directory in VSCode.
 
 To initialize a new git repository, ensure you have git installed correctly and run the following command inside of the directory you created:
 
@@ -74,7 +76,7 @@ Inside of the .devcontainer directory, create a JSON file titled "devcontatiner.
 
 Save the file and commit to your git repo by following the same steps as before. Now, you will need to reopen your project in the dev container. To do so, open the command palette in VSCode with the following keyboard shortcut: CMD + Shift + P. Search for and click on "Dev Containers: Reopen in Container." 
 
-To ensure you have correctly set up your dev container, run the following command in your terminal:
+Once you have reopened, your terminal should look different than before and should show the current working branch in parentheses. To ensure you have correctly set up your dev container, run the following command in your terminal:
 
 ``` bash
 go version
@@ -90,6 +92,7 @@ In your existing directory, create a new directory to hold the files for the Go 
 
 ``` bash
 mkdir go-project
+cd go-project
 go mod init go-project
 ```
 
@@ -117,7 +120,7 @@ go run main.go
 
 You should see the output "Hello COMP423" in your terminal.
 
-### 3. Compile your directory using go build
+### 3. Compile your directory using `go build`
 
 To compile your directory, use the following command in your terminal:
 

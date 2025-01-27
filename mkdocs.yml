@@ -7,6 +7,10 @@ theme:
     primary: teal
     accent: cyan
     theme: default
+  icon:
+    admonition:
+      note: octicons/tag-16
+      info: octicons/info-16
 
 
 markdown_extensions:
@@ -16,4 +20,7 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
   - pymdownx.superfences

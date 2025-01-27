@@ -17,9 +17,19 @@ You should have VSCode, Docker, and git installed on your system. Instructions a
 
 ## Step 1: Dev Container Setup
 
+!!! tip
+
+    For the easiest setup, use VSCode's terminal to begin your project.
+
 ### 1. Create directory and initialize git
 
-To begin, open VSCode and open a new terminal. Create a new directory by running the following command in the terminal:
+To begin, open VSCode and open a new terminal. 
+
+!!! tip
+
+    You can open a terminal in VSCode using the following keyboard shortcut: CTRL+Shift+`
+
+Create a new directory by running the following command in the terminal:
 
 ``` bash
 mkdir go-helloworld
@@ -134,12 +144,20 @@ To compile your directory, use the following command in your terminal:
 go build
 ```
 
+!!! note
+
+    Make sure that you are in your directory you created for the Go project and not the overarching directory.
+
 You will then be able to run your code using the following command in your terminal:
 
 ``` bash
 ./go-tutorial
 ```
 
-This allows you to run the output without re-compiling. This helps with processing times and memory. Make sure to commit any changes made.
+This allows you to run the output without re-compiling. This helps with processing times and memory.
+
+!!! note
+
+    Make sure to commit any changes made. When working on project it is important to commit early and often!
 
 Congratulations! You have successfully created a dev container and created your first Go project!
